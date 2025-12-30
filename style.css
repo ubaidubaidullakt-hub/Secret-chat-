@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: Arial;
+}
+
+#lock {
+  text-align: center;
+  margin-top: 30%;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.top {
+  background: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#users {
+  font-size: 12px;
+  padding: 5px;
+  color: #aaa;
+}
+
+#messages {
+  height: 70vh;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.msg {
+  margin: 6px 0;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  display: flex;
+}
+
+.bottom input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}

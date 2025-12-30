@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Secret Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Lock screen -->
+<div id="lock">
+  <h2>🔐 Enter Secret Key</h2>
+  <input id="keyInput" placeholder="Secret key">
+  <button onclick="unlock()">Unlock</button>
+</div>
+
+<!-- Chat interface -->
+<div id="chat" hidden>
+  <div class="top">
+    <span id="roomName">Secret Chat</span>
+    <button onclick="changeName()">✏️</button>
+  </div>
+
+  <div id="users"></div>
+
+  <div id="messages"></div>
+
+  <div class="bottom">
+    <input id="msg" placeholder="Message">
+    <button onclick="send()">➤</button>
+  </div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<!-- Your JS -->
+<script src="app.js"></script>
+</body>
+</html>
